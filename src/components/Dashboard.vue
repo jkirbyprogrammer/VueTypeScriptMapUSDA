@@ -1,5 +1,5 @@
 <template>
-  <div class="map-container" >
+  <div class="map-container">
     <l-map :useGlobalLeaflet="false" ref="map" v-model:zoom="zoom" :center="[37.8, -96]">
       <l-tile-layer url="https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}'"
                     layer-type="base"
@@ -41,6 +41,16 @@
       LPopup,
       LControlLayers,
       LLayerGroup
+    },
+    props: {
+      typeProp: {
+        type: String,
+        required: true
+      },
+      yearProp: {
+        type: String,
+        required: true
+      }
     },
     methods: {
       onEachStateFeature(feature, layer) {
@@ -129,7 +139,10 @@
       };
     },
     async beforeMount() {
-      this.geojsonstate = await GetGeoJson("src/GeoJson/2025StateUsSecLayer.json");
+      const year = this.yearProp;
+      console.log("year value: " + year);
+
+      this.geojsonstate = await GetGeoJson("src/GeoJson/" + year + "StateUsSecLayer.json");
       this.geojsoncounty = await GetGeoJson("src/GeoJson/2025CountyUsSecLayer.json");
       this.geojsonfire = await GetGeoJson("src/GeoJson/2024NationalUSFSFireOccurrencePoint.json");
 

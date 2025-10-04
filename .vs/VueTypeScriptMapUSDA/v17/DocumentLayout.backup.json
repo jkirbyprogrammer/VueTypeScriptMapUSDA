@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\components\\dashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\components\\dashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.css",
-              "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\assets\\main.css",
-              "RelativeDocumentMoniker": "src\\assets\\main.css",
-              "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\assets\\main.css",
-              "RelativeToolTip": "src\\assets\\main.css",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-04T00:38:49.611Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,23 +32,39 @@
               "RelativeDocumentMoniker": "src\\App.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\App.vue",
               "RelativeToolTip": "src\\App.vue",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-10-04T00:33:46.567Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\main.ts",
+              "RelativeDocumentMoniker": "src\\main.ts",
+              "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\main.ts",
+              "RelativeToolTip": "src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-04T17:55:07.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Dashboard.vue",
               "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\components\\Dashboard.vue",
               "RelativeDocumentMoniker": "src\\components\\Dashboard.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\components\\Dashboard.vue",
               "RelativeToolTip": "src\\components\\Dashboard.vue",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAI4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-10-02T00:54:08.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T00:54:08.371Z"
             }
           ]
         }

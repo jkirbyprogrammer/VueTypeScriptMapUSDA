@@ -1,13 +1,37 @@
-<script setup lang="ts">
+<script lang="ts">
+  import { ref } from 'vue';
   import Dashboard from './components/Dashboard.vue'
-  import TheWelcome from './components/TheWelcome.vue'
+
+  export default {
+    components: {
+      Dashboard,
+    },
+    setup() {
+      const componentKey = ref(0); // Initialize a key for the child component
+      const type = ref('ussec'); // Type prop for Dashboard
+      const year = ref('2024'); // Year prop for Dashboard
+
+      const reloadData = () => {
+        // Update the prop value
+        type.value = 'pres';
+        year.value = '2025';
+        // Increment the key to force re-render of ChildComponent
+        componentKey.value++;
+      };
+
+      return {
+        componentKey,
+        type,
+        year,
+        reloadData,
+      };
+    },
+  };
 </script>
 
 <template>
-
   <header>
     <div>
-
       <div class="centered-container">
         <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="50" height="50" />
       </div>
@@ -18,12 +42,16 @@
       </div>
       <div class="centered-container">
         <div>
-          <p>TO DO: Add president and ussec buttons here to toggle map data.</p>
+          <button @click="reloadData">Change Data Test</button>
+        </div>
+      </div>
+      <div class="centered-container">
+        <div>
           <p>TO DO: Add year options here to toggle map data here...</p>
         </div>
       </div>
       <div>
-        <Dashboard />
+        <Dashboard :typeProp="type" :yearProp="year" :key="componentKey" />
       </div>
       <div>
         <div class="left-list">
@@ -57,7 +85,6 @@
         </div>
       </div>
     </div>
-    <!--<TheWelcome />-->
   </header>
 </template>
 
