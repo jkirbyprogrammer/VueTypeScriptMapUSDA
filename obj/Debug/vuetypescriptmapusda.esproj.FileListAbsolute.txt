@@ -1,0 +1,1 @@
+C:\VSProjects\VueTypeScriptMapUSDA\obj\Debug\vuetypescriptmapusda.esproj.CoreCompileInputs.cache
