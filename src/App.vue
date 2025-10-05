@@ -8,14 +8,21 @@
     },
     setup() {
       const componentKey = ref(0); // Initialize a key for the child component
-      const type = ref('ussec'); // Type prop for Dashboard
-      const year = ref('2024'); // Year prop for Dashboard
+      var type = ref('ussec'); // Default to 'ussec'
+      var year = ref('2025'); // Default to '2025'
 
-      const reloadData = () => {
-        // Update the prop value
+      const reloadDataUsSec = () => {
+        type.value = 'ussec';
+        componentKey.value++;
+      };
+
+      const reloadDataPres = () => {
         type.value = 'pres';
-        year.value = '2025';
-        // Increment the key to force re-render of ChildComponent
+        componentKey.value++;
+      };
+
+      const reloadYear = () => {
+        year.value = '2021';
         componentKey.value++;
       };
 
@@ -23,7 +30,9 @@
         componentKey,
         type,
         year,
-        reloadData,
+        reloadDataUsSec,
+        reloadDataPres,
+        reloadYear,
       };
     },
   };
@@ -42,12 +51,13 @@
       </div>
       <div class="centered-container">
         <div>
-          <button @click="reloadData">Change Data Test</button>
+          <button :class="{'btn-selected': type === 'ussec', 'btn-notselected': type === 'pres'}" @click="reloadDataUsSec">US Secretary of Ag</button>
+          <button :class="{'btn-selected': type === 'pres', 'btn-notselected': type === 'ussec'}" @click="reloadDataPres">Presidential Declarations</button>
         </div>
       </div>
       <div class="centered-container">
         <div>
-          <p>TO DO: Add year options here to toggle map data here...</p>
+          <a @click="reloadYear">2021</a>
         </div>
       </div>
       <div>

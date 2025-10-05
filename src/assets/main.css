@@ -29,13 +29,12 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
   }
 }
 
 .map-container {
-  width: 100vw; 
-  height: 600px; 
+  width: 100vw;
+  height: 600px;
 }
 
 
@@ -50,5 +49,28 @@ a,
 .left-list {
   display: flex;
   justify-content: left; /* Centers horizontally */
-  text-align:left;
+  text-align: left;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Add more button-like styles as needed */
+}
+
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+
+.btn-selected {
+  background-color: green;
+}
+
+.btn-notselected {
+  background-color: gray;
 }
