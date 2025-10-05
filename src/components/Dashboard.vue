@@ -183,14 +183,14 @@
       const fireYear = year === "2025" ? "2024" : year;
 
       if (type === "ussec") {
-        this.geojsonstate = await GetGeoJson("src/GeoJson/" + year + "StateUsSecLayer.json");
-        this.geojsoncounty = await GetGeoJson("src/GeoJson/" + year + "CountyUsSecLayer.json");
+        this.geojsonstate = await GetGeoJson("assets/" + year + "StateUsSecLayer.json");
+        this.geojsoncounty = await GetGeoJson("assets/" + year + "CountyUsSecLayer.json");
       }
       else {
-        this.geojsonstate = await GetGeoJson("src/GeoJson/" + year + "StatePresLayer.json");
-        this.geojsoncounty = await GetGeoJson("src/GeoJson/" + year + "CountyPresLayer.json");
+        this.geojsonstate = await GetGeoJson("assets/" + year + "StatePresLayer.json");
+        this.geojsoncounty = await GetGeoJson("assets/" + year + "CountyPresLayer.json");
       }
-      this.geojsonfire = await GetGeoJson("src/GeoJson/" + fireYear + "NationalUSFSFireOccurrencePoint.json");
+      this.geojsonfire = await GetGeoJson("assets/" + fireYear + "NationalUSFSFireOccurrencePoint.json");
 
       this.mapIsReady = true;
     },

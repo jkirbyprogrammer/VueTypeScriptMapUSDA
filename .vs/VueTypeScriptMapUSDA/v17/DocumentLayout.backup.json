@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\vite.config.ts",
+              "RelativeDocumentMoniker": "vite.config.ts",
+              "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\vite.config.ts",
+              "RelativeToolTip": "vite.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-05T14:59:07.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "src\\App.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\App.vue",
               "RelativeToolTip": "src\\App.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-10-05T12:23:46.323Z",
               "EditorCaption": ""
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "src\\components\\Dashboard.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\components\\Dashboard.vue",
               "RelativeToolTip": "src\\components\\Dashboard.vue",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJ0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAALIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-10-02T00:54:08.371Z",
               "EditorCaption": ""

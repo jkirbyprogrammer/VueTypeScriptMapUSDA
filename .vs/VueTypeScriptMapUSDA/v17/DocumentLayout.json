@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\VSProjects\\VueTypeScriptMapUSDA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\components\\dashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|solutionrelative:src\\components\\dashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\VSProjects\\VueTypeScriptMapUSDA\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9437D941-2C4B-4853-1281-A7E929537D60}|vuetypescriptmapusda.esproj|c:\\vsprojects\\vuetypescriptmapusda\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,26 +30,52 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "runtime-core.esm-bundler.js",
+              "DocumentMoniker": "c:\\VSProjects\\VueTypeScriptMapUSDA\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
+              "RelativeDocumentMoniker": "node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
+              "ToolTip": "c:\\VSProjects\\VueTypeScriptMapUSDA\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
+              "RelativeToolTip": "node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAuwAoBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-05T15:03:05.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\vite.config.ts",
+              "RelativeDocumentMoniker": "vite.config.ts",
+              "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\vite.config.ts",
+              "RelativeToolTip": "vite.config.ts",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-05T14:59:07.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "App.vue",
               "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\App.vue",
               "RelativeDocumentMoniker": "src\\App.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\App.vue",
               "RelativeToolTip": "src\\App.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAADYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-10-05T12:23:46.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Dashboard.vue",
               "DocumentMoniker": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\components\\Dashboard.vue",
               "RelativeDocumentMoniker": "src\\components\\Dashboard.vue",
               "ToolTip": "C:\\VSProjects\\VueTypeScriptMapUSDA\\src\\components\\Dashboard.vue",
               "RelativeToolTip": "src\\components\\Dashboard.vue",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJ0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAYwJUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-10-02T00:54:08.371Z",
               "EditorCaption": ""
