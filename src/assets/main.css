@@ -44,6 +44,8 @@ a,
   display: flex;
   justify-content: center; /* Centers horizontally */
   text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .left-list {
@@ -51,14 +53,7 @@ a,
   justify-content: left; /* Centers horizontally */
   text-align: left;
   margin-left:3vw;
-}
-
-.btn-selected {
-  background-color: green;
-}
-
-.btn-notselected {
-  background-color: gray;
+  padding-top:10px;
 }
 
 /* CSS */
@@ -202,7 +197,6 @@ a,
 
 .year-link-selected {
   font-weight: 800;
-  color: #61B041;
 }
 
 
