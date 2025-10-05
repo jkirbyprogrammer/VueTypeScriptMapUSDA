@@ -165,6 +165,9 @@
               <h3>${props.FIRENAME}</h3>
               <div><b>Fire Year: </b>${props.FIREYEAR}</div>
               <div><b>Fire Discovery Date/Time: </b>${props.DISCOVERYDATETIME}</div>
+              <div><b>Date Fire Was Out: </b>${props.FIREOUTDATETIME}</div>
+              <div><b>Total Fire Acres: </b>${props.TOTALACRES}</div>
+              <div><b>Fire Cause: </b>${props.STATCAUSE}</div>
             </div>`);
             }
             else {
