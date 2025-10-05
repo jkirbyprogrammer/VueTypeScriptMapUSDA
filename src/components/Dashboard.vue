@@ -22,6 +22,41 @@
       <l-layer-group ref="geoJsonLayer3" layer-type="overlay" name="Fire Points Layer">
         <l-geo-json :geojson="geojsonfire" :options="geojsonFireOptions"></l-geo-json>
       </l-layer-group>
+      <l-control class="leaflet-control" position="bottomleft">
+        <div class="leaflet-control leaflet-title">
+          <b>State Declarations</b>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-green-1 w-[80px] h-[80px]">1 - 9</div>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-green-2 w-[80px] h-[80px]">9 - 19</div>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-green-3 w-[80px] h-[80px]">20 - 29</div>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-green-4 w-[80px] h-[80px]">30+</div>
+        </div>
+        <div class="leaflet-control leaflet-title">
+          <b>County Declarations</b>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-red w-[80px] h-[80px]">Crop Data</div>
+        </div>
+        <div class="leaflet-control leaflet-bar">
+          <div class="bg-blue w-[80px] h-[80px]">No Crop Data</div>
+        </div>
+        <div class="leaflet-title leaflet-control fire-point">
+          <div>
+            <div class="circle">
+              <span style="margin-left:20px;">USFS</span>
+              <span style="margin-left:5px;">Fire</span>
+              <span style="margin-left:5px;">Origins</span>
+            </div>
+          </div>
+        </div>
+      </l-control>
       <l-control-layers />
     </l-map>
   </div>
@@ -30,7 +65,7 @@
 <script>
 
   import "leaflet/dist/leaflet.css"
-  import { LGeoJson, LMap, LTileLayer, LPopup, LControlLayers, LLayerGroup } from "@vue-leaflet/vue-leaflet";
+  import { LGeoJson, LMap, LTileLayer, LPopup, LControlLayers, LLayerGroup, LControl } from "@vue-leaflet/vue-leaflet";
   const { circleMarker } = await import("leaflet/dist/leaflet-src.esm");
 
   export default {
@@ -40,7 +75,8 @@
       LGeoJson,
       LPopup,
       LControlLayers,
-      LLayerGroup
+      LLayerGroup,
+      LControl
     },
     props: {
       typeProp: {
@@ -141,7 +177,7 @@
     async beforeMount() {
       const year = this.yearProp;
       const type = this.typeProp;
-      const fireYear = year === "2025" ? "2024" : year; 
+      const fireYear = year === "2025" ? "2024" : year;
 
       if (type === "ussec") {
         this.geojsonstate = await GetGeoJson("src/GeoJson/" + year + "StateUsSecLayer.json");
@@ -151,7 +187,7 @@
         this.geojsonstate = await GetGeoJson("src/GeoJson/" + year + "StatePresLayer.json");
         this.geojsoncounty = await GetGeoJson("src/GeoJson/" + year + "CountyPresLayer.json");
       }
-      this.geojsonfire = await GetGeoJson("src/GeoJson/"+ fireYear + "NationalUSFSFireOccurrencePoint.json");
+      this.geojsonfire = await GetGeoJson("src/GeoJson/" + fireYear + "NationalUSFSFireOccurrencePoint.json");
 
       this.mapIsReady = true;
     },

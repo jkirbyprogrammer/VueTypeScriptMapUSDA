@@ -15,14 +15,28 @@
         type.value = 'ussec';
         componentKey.value++;
       };
-
       const reloadDataPres = () => {
         type.value = 'pres';
         componentKey.value++;
       };
-
-      const reloadYear = () => {
+      const reloadYear2021 = () => {
         year.value = '2021';
+        componentKey.value++;
+      };
+      const reloadYear2022 = () => {
+        year.value = '2022';
+        componentKey.value++;
+      };
+      const reloadYear2023 = () => {
+        year.value = '2023';
+        componentKey.value++;
+      };
+      const reloadYear2024 = () => {
+        year.value = '2024';
+        componentKey.value++;
+      };
+      const reloadYear2025 = () => {
+        year.value = '2025';
         componentKey.value++;
       };
 
@@ -32,15 +46,18 @@
         year,
         reloadDataUsSec,
         reloadDataPres,
-        reloadYear,
+        reloadYear2021,
+        reloadYear2022,
+        reloadYear2023,
+        reloadYear2024,
+        reloadYear2025
       };
     },
   };
 </script>
 
 <template>
-  <header>
-    <div>
+    <div class="mainDiv">
       <div class="centered-container">
         <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="50" height="50" />
       </div>
@@ -57,45 +74,49 @@
       </div>
       <div class="centered-container">
         <div>
-          <a @click="reloadYear">2021</a>
+          <a :class="{'year-link-selected': year === '2021', 'year-link': year != '2021'}" @click="reloadYear2021">2021</a>
+          <a :class="{'year-link-selected': year === '2022', 'year-link': year != '2022'}" @click="reloadYear2022">2022</a>
+          <a :class="{'year-link-selected': year === '2023', 'year-link': year != '2023'}" @click="reloadYear2023">2023</a>
+          <a :class="{'year-link-selected': year === '2024', 'year-link': year != '2024'}" @click="reloadYear2024">2024</a>
+          <a :class="{'year-link-selected': year === '2025', 'year-link': year != '2025'}" @click="reloadYear2025">2025</a>
         </div>
       </div>
       <div>
         <Dashboard :typeProp="type" :yearProp="year" :key="componentKey" />
       </div>
-      <div>
-        <div class="left-list">
-          <ul>
-            <li>Use the layer option to toggle between state/county level details or change the base layer.</li>
-            <li>Use Presidential Emergency Declarations/US Secretary of Ag buttons to toggle data in map.</li>
-            <li>Click on the states/counties to see details. <b>Note:</b> Defaults to county as the primary layer, use layer option to toggle.</li>
-            <li>Use the year links to update the map year data set.</li>
-            <li>Points represent ignition or origin from which the individual USFS wildland fires started by year. <b>Note:</b> Until full dataset is out for year 2025, the 2024 data will show when 2025 year is selected. </li>
-            <li>
-              Data sources used to create GeoJson for map:
-              <ul>
-                <li>
-                  <a target="_blank" href="https://www.fsa.usda.gov/resources/disaster-assistance-program/disaster-designation-information">
-                    USDA Disaster Designation Information
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://quickstats.nass.usda.gov/">
-                    USDA Quick Stats Census
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://catalog.data.gov/dataset/national-usfs-fire-occurrence-point-feature-layer-d3233">
-                    National USFS Fire Occurrence Point
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+      <div class="left-list">
+        <ul>
+          <li>Use the layer option to toggle between state/county level details or change the base layer.</li>
+          <li>Use Presidential Emergency Declarations/US Secretary of Ag buttons to toggle data in map.</li>
+          <li>Click on the states/counties to see details. <b>Note:</b> Defaults to county as the primary layer, use layer option to toggle.</li>
+          <li>Use the year links to update the map year data set.</li>
+          <li>Points represent ignition or origin from which the individual USFS wildland fires started by year. <b>Note:</b> Until full dataset is out for year 2025, the 2024 data will show when 2025 year is selected. </li>
+          <li>
+            Data sources used to create GeoJson for map:
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.fsa.usda.gov/resources/disaster-assistance-program/disaster-designation-information">
+                  USDA Disaster Designation Information
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://quickstats.nass.usda.gov/">
+                  USDA Quick Stats Census
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://catalog.data.gov/dataset/national-usfs-fire-occurrence-point-feature-layer-d3233">
+                  National USFS Fire Occurrence Point
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
+
+  
 </template>
 
 <style scoped>

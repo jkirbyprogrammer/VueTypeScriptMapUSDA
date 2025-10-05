@@ -27,45 +27,31 @@ a,
   }
 
   #app {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .map-container {
-  width: 100vw;
+  width: 91vw;
   height: 600px;
+  place-items: center;
+  justify-content: center; /* Centers horizontally */
+  margin-left: 4vw;
 }
-
 
 .centered-container {
   display: flex;
   justify-content: center; /* Centers horizontally */
   text-align: center;
-  align-items: center; /* Centers vertically */
-  margin: 5px;
 }
 
 .left-list {
   display: flex;
   justify-content: left; /* Centers horizontally */
   text-align: left;
+  margin-left:3vw;
 }
-
-.button-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  /* Add more button-like styles as needed */
-}
-
-  .button-link:hover {
-    background-color: #0056b3;
-  }
 
 .btn-selected {
   background-color: green;
@@ -73,4 +59,154 @@ a,
 
 .btn-notselected {
   background-color: gray;
+}
+
+/* CSS */
+.btn-selected {
+  appearance: none;
+  background-color: #2A4B1D;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 5px;
+}
+.btn-selected:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+
+.btn-notselected {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 5px;
+}
+
+  .btn-notselected:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+
+  .btn-notselected:hover {
+    background-color: #2A4B1D;
+  }
+
+
+.bg-green-1 {
+  background-color: #b2ed9a;
+  color: black;
+  width: 40px;
+  text-align: center;
+}
+
+.bg-green-2 {
+  background-color: #88d669;
+  color: black;
+  width: 40px;
+  text-align: center;
+}
+
+
+.bg-green-3 {
+  background-color: #3d9137;
+  color: black;
+  width: 40px;
+  text-align: center;
+}
+
+.bg-green-4 {
+  background-color: #011a08;
+  color: white;
+  width: 40px;
+  text-align: center;
+}
+
+.bg-red {
+  background-color: red;
+  color: white;
+  width: 80px;
+  text-align: center;
+}
+
+.bg-blue {
+  background-color: #5E87E8;
+  color: white;
+  width: 80px;
+  text-align: center;
+}
+
+.leaflet-title {
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-bottom: 2px !important;
+}
+
+.fire-point {
+  width: 100px !important;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #FDA50F;
+  margin-left: 5px;
+}
+
+
+.year-link{
+    margin:5px;
+}
+
+.year-link-selected {
+  font-weight: 800;
+  color: #61B041;
+}
+
+
+.mainDiv{
+    padding-top:20px;
+    padding-bottom:20px;
 }
