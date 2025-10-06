@@ -4,7 +4,7 @@ Interactive Leaflet map example using Vue.js version 3, Vite, TypeScript, Vue Le
   - https://www.fsa.usda.gov/resources/disaster-assistance-program/disaster-designation-information
   - USDA quick stats
 - I have this React application hosted on Azure, public link below: 
-  - [Link to React Web Map](https://jolly-glacier-05284a610.1.azurestaticapps.net/) 
+  - [Link to Vue Web Map](https://jolly-grass-02fbc5610.2.azurestaticapps.net/) 
 - Application Details:
   - vue v3.5.22
   - vite v6.0.1
@@ -12,7 +12,7 @@ Interactive Leaflet map example using Vue.js version 3, Vite, TypeScript, Vue Le
   - vue-leaflet/vue-leaflet v0.10.1
   - typescript v5.9.0
 
-NOTE: This project is almost completed. Just need to add year selectors and usda/president buttons to change data set in map, just like the other leaflet examples I provided (React, Angular, and MVC ASP.NET Core Web App)
+NOTE: This project is almost completed, just need to do a little more testing, add comments and clean code. 
 
 # vuetypescriptmapusda
 
