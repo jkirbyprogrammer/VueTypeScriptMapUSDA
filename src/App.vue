@@ -11,32 +11,12 @@
       var type = ref('ussec'); // Default to 'ussec'
       var year = ref('2025'); // Default to '2025'
 
-      const reloadDataUsSec = () => {
-        type.value = 'ussec';
+      const reloadData = (typeSelected: string) => {
+        type.value = typeSelected;
         componentKey.value++;
       };
-      const reloadDataPres = () => {
-        type.value = 'pres';
-        componentKey.value++;
-      };
-      const reloadYear2021 = () => {
-        year.value = '2021';
-        componentKey.value++;
-      };
-      const reloadYear2022 = () => {
-        year.value = '2022';
-        componentKey.value++;
-      };
-      const reloadYear2023 = () => {
-        year.value = '2023';
-        componentKey.value++;
-      };
-      const reloadYear2024 = () => {
-        year.value = '2024';
-        componentKey.value++;
-      };
-      const reloadYear2025 = () => {
-        year.value = '2025';
+      const reloadYear = (yearSelected: string) => {
+        year.value = yearSelected;
         componentKey.value++;
       };
 
@@ -44,13 +24,8 @@
         componentKey,
         type,
         year,
-        reloadDataUsSec,
-        reloadDataPres,
-        reloadYear2021,
-        reloadYear2022,
-        reloadYear2023,
-        reloadYear2024,
-        reloadYear2025
+        reloadData,
+        reloadYear
       };
     },
   };
@@ -68,17 +43,17 @@
       </div>
       <div class="centered-container">
         <div>
-          <button :class="{'btn-selected': type === 'ussec', 'btn-notselected': type === 'pres'}" @click="reloadDataUsSec">US Secretary of Ag</button>
-          <button :class="{'btn-selected': type === 'pres', 'btn-notselected': type === 'ussec'}" @click="reloadDataPres">Presidential Declarations</button>
+          <button :class="{'btn-selected': type === 'ussec', 'btn-notselected': type === 'pres'}" @click="reloadData('ussec')">US Secretary of Ag</button>
+          <button :class="{'btn-selected': type === 'pres', 'btn-notselected': type === 'ussec'}" @click="reloadData('pres')">Presidential Declarations</button>
         </div>
       </div>
       <div class="centered-container">
         <div>
-          <a :class="{'year-link-selected': year === '2021', 'year-link': year != '2021'}" @click="reloadYear2021">2021</a>
-          <a :class="{'year-link-selected': year === '2022', 'year-link': year != '2022'}" @click="reloadYear2022">2022</a>
-          <a :class="{'year-link-selected': year === '2023', 'year-link': year != '2023'}" @click="reloadYear2023">2023</a>
-          <a :class="{'year-link-selected': year === '2024', 'year-link': year != '2024'}" @click="reloadYear2024">2024</a>
-          <a :class="{'year-link-selected': year === '2025', 'year-link': year != '2025'}" @click="reloadYear2025">2025</a>
+          <a :class="{'year-link-selected': year === '2021', 'year-link': year != '2021'}" @click="reloadYear('2021')">2021</a>
+          <a :class="{'year-link-selected': year === '2022', 'year-link': year != '2022'}" @click="reloadYear('2022')">2022</a>
+          <a :class="{'year-link-selected': year === '2023', 'year-link': year != '2023'}" @click="reloadYear('2023')">2023</a>
+          <a :class="{'year-link-selected': year === '2024', 'year-link': year != '2024'}" @click="reloadYear('2024')">2024</a>
+          <a :class="{'year-link-selected': year === '2025', 'year-link': year != '2025'}" @click="reloadYear('2025')">2025</a>
         </div>
       </div>
       <div>

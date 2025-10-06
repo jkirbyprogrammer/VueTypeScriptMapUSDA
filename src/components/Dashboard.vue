@@ -27,25 +27,25 @@
           <b>State Declarations</b>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-green-1 w-[80px] h-[80px]">1 - 9</div>
+          <div class="bg-green-1">1 - 9</div>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-green-2 w-[80px] h-[80px]">9 - 19</div>
+          <div class="bg-green-2">9 - 19</div>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-green-3 w-[80px] h-[80px]">20 - 29</div>
+          <div class="bg-green-3">20 - 29</div>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-green-4 w-[80px] h-[80px]">30+</div>
+          <div class="bg-green-4">30+</div>
         </div>
         <div class="leaflet-control leaflet-title">
           <b>County Declarations</b>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-red w-[80px] h-[80px]">Crop Data</div>
+          <div class="bg-red">Crop Data</div>
         </div>
         <div class="leaflet-control leaflet-bar">
-          <div class="bg-blue w-[80px] h-[80px]">No Crop Data</div>
+          <div class="bg-blue">No Crop Data</div>
         </div>
         <div class="leaflet-title leaflet-control fire-point">
           <div>
